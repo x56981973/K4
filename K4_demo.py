@@ -5,7 +5,7 @@ import time
 dic = {}
 edges = []
 
-pointNum = 20
+pointNum = 200
 
 
 def factorial(n):
@@ -81,8 +81,7 @@ def detectSingleK4(color, a, b, c, d):  # a, b为被染色边的两点，c, d为
     global edges
     newExpection = 0
     if dic.get(getKey(a, b, c, d)) != None:
-        origin = [color, getEdge(a, c), getEdge(
-            a, d), getEdge(b, c), getEdge(b, d), getEdge(c, d)]
+        origin = [color, getEdge(a, c), getEdge(a, d), getEdge(b, c), getEdge(b, d), getEdge(c, d)]
         tmp = filter(lambda e: e != 0, origin)
         if len(set(tmp)) <= 1:
             newExpection = 0.5 ** (6 - len(tmp))
@@ -114,10 +113,5 @@ print 'upper limit = ', comb(pointNum, 4)
 initModel()
 updateAllEdges()
 
-trueNum = 0
-for key in dic:
-    value = dic.get(key)
-    trueNum += value
-print 'true count = ', trueNum
-print len(dic)
-print "time used: ", time.time() - startTime
+print 'Count: ', len(dic)
+print "Time used: ", time.time() - startTime
