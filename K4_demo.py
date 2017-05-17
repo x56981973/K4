@@ -5,7 +5,7 @@ import time
 dic = {}
 edges = []
 
-pointNum = 20
+pointNum = 200
 
 
 def factorial(n):
