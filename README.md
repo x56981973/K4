@@ -2,7 +2,7 @@
 
 ## Problem Description
 
-**Thm:** There is a two-coloring of Kn with at most $C_n^4\times2^{-5}$ monochromatic copies of K4.
+**Thm:** There is a two-coloring of Kn with at most $$C_n^4\times2^{-5}$$ monochromatic copies of K4.
 
 
 ## Solution
